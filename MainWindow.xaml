@@ -1,0 +1,28 @@
+﻿<Window x:Name="Window" x:Class="IntegralApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntegralApp"
+        mc:Ignorable="d"
+        Title="Integral" Height="550" Width="450" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="/assets/integral_icon.ico">
+    <Grid>
+        <StackPanel Margin="42,362,42,102">
+            <TextBlock x:Name="NTextBlock" Text="N (кол-во разбиений, целое и больше 0)" FontFamily="Bahnschrift SemiBold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="NTextBox" TextWrapping="NoWrap" Width="60" Height="20" Margin="5,5,5,5" TextChanged="NTextBox_TextChanged" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Margin="80,437,225,22">
+            <TextBlock x:Name="ATextBlock" Text="A (нижний предел)" FontFamily="Bahnschrift SemiBold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="ATextBox" TextWrapping="NoWrap" Width="60" Height="20" Margin="5,5,5,5" TextChanged="ATextBox_TextChanged" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Margin="230,437,80,23">
+            <TextBlock x:Name="BTextBlock" Text="B (верхний предел)" FontFamily="Bahnschrift SemiBold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="BTextBox" TextWrapping="NoWrap" Width="60" Height="20" Margin="5,5,5,5" TextChanged="BTextBox_TextChanged" TextAlignment="Center" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Margin="60,64,60,313">
+            <TextBlock x:Name="FTextBlock" Text="Формула интеграла" FontFamily="Bahnschrift SemiBold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="FTextBox" Height="62" TextWrapping="NoWrap" Width="265" FontSize="18" Margin="0,35,0,0" TextAlignment="Center" TextChanged="FTextBox_TextChanged" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <Button x:Name="SButton" Content="Посчитать!" HorizontalAlignment="Center" VerticalAlignment="Center" Height="64" Width="158" FontFamily="Bahnschrift SemiBold" FontSize="28" Click="SButton_Click" Visibility="Visible"/>
+    </Grid>
+</Window>

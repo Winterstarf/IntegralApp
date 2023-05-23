@@ -106,7 +106,7 @@ namespace IntegralApp
             double[] y = i.GetArrayOfY(x, F, N);
             double res = i.Trapezoid(H, y);
 
-            MessageBox.Show($"Корень из x ~ {res}");
+            MessageBox.Show($"~ {res}");
         }
     }
 

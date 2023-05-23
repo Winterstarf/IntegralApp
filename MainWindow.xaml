@@ -20,7 +20,7 @@
             <TextBox x:Name="BTextBox" TextWrapping="NoWrap" Width="60" Height="20" Margin="5,5,5,5" TextChanged="BTextBox_TextChanged" TextAlignment="Center" VerticalContentAlignment="Center"/>
         </StackPanel>
         <StackPanel Margin="60,64,60,313">
-            <TextBlock x:Name="FTextBlock" Text="Формула интеграла" FontFamily="Bahnschrift SemiBold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="FTextBlock" Text="Подинтегральная функция" FontFamily="Bahnschrift SemiBold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox x:Name="FTextBox" Height="62" TextWrapping="NoWrap" Width="265" FontSize="18" Margin="0,35,0,0" TextAlignment="Center" TextChanged="FTextBox_TextChanged" VerticalContentAlignment="Center"/>
         </StackPanel>
         <Button x:Name="SButton" Content="Посчитать!" HorizontalAlignment="Center" VerticalAlignment="Center" Height="64" Width="158" FontFamily="Bahnschrift SemiBold" FontSize="28" Click="SButton_Click" Visibility="Visible"/>

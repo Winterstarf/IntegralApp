@@ -106,7 +106,7 @@ namespace IntegralApp
             double[] y = i.GetArrayOfY(x, F, N);
             double res = i.Trapezoid(H, y);
 
-            MessageBox.Show($"~ {res}");
+            MessageBox.Show($"~ {string.Join(y)}");
         }
     }
 
@@ -180,7 +180,7 @@ namespace IntegralApp
 
         public double Trapezoid(double h, double[] y)
         {
-            double sum = 0, res = 0, trapezoidPart = (y[0] + y[y.Length]) / 2;
+            double sum = 0, res = 0, trapezoidPart = (y[0] + y[y.Length - 1]) / 2;
             
             for (int i = 1; i < y.Length; i++)
             {

@@ -23,6 +23,6 @@
             <TextBlock x:Name="FTextBlock" Text="Подинтегральная функция" FontFamily="Bahnschrift SemiBold" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox x:Name="FTextBox" Height="62" TextWrapping="NoWrap" Width="265" FontSize="18" Margin="0,35,0,0" TextAlignment="Center" TextChanged="FTextBox_TextChanged" VerticalContentAlignment="Center"/>
         </StackPanel>
-        <Button x:Name="SButton" Content="Посчитать!" HorizontalAlignment="Center" VerticalAlignment="Center" Height="64" Width="158" FontFamily="Bahnschrift SemiBold" FontSize="28" Click="SButton_Click" Visibility="Visible"/>
+        <Button x:Name="SButton" Content="Высчитать" HorizontalAlignment="Center" VerticalAlignment="Center" Height="64" Width="158" FontFamily="Bahnschrift SemiBold" FontSize="28" Click="SButton_Click" Visibility="Visible"/>
     </Grid>
 </Window>

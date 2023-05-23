@@ -142,16 +142,18 @@ namespace IntegralApp
 
         private double Evaluate(string f, double x)
         {
-            string[] patterns = { @"\b(x)\b", @"\^", @"\b(sin)\b", @"\b(cos)\b" };
+            string[] patterns = { @"\b(x)\b", @"\b(sin)\b", @"\b(cos)\b" };
 
             // Define replacements for each pattern
-            string[] replacements = { "[x]", "Pow", "Sin", "Cos" };
+            string[] replacements = { "[x]", "Sin", "Cos" };
 
             // Apply replacements using regular expressions
             for (int i = 0; i < patterns.Length; i++)
             {
                 f = Regex.Replace(f, patterns[i], replacements[i]);
             }
+            
+            if (f.Contains("^")) f = ReplaceExponentiation(f);
 
             NCalc.Expression e = new NCalc.Expression(f);
             e.Parameters["x"] = x;

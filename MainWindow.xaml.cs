@@ -106,7 +106,7 @@ namespace IntegralApp
             double[] y = i.GetArrayOfY(x, F, N);
             double res = i.Trapezoid(H, y);
 
-            MessageBox.Show($"f ~ {res}\nx={string.Join("  ", x)}\ny={string.Join("  ", y)}");
+            MessageBox.Show($"Интеграл = {res}\nx: {string.Join(", ", x)}\ny: {string.Join(", ", y)}");
         }
     }
 

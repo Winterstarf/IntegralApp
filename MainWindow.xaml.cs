@@ -180,14 +180,14 @@ namespace IntegralApp
 
         public double Trapezoid(double h, double[] y)
         {
-            double sum = 0, res = 0, trapezoidPart = (y[0] + y[y.Length - 1]) / 2;
+            double sum = 0, res = 0, trapezoidPart = (y[0] + y[y.Length]) / 2;
             
             for (int i = 1; i < y.Length; i++)
             {
                 sum += y[i];
             }
             
-            res = h * (sum + trapezoidPart);
+            res = h * (trapezoidPart + sum);
             return res;
         }
     }
